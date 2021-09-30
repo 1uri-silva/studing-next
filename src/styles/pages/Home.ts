@@ -11,6 +11,7 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: column;
 
+    h1,
     p {
       margin-right: 20px;
     }

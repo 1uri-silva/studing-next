@@ -21,5 +21,20 @@
       "id": "4",
       "like": "pattins"
     }
+  ],
+
+  "personal": [
+    {
+      "id": "5",
+      "professional": "academy"
+    },
+    {
+      "id": "6",
+      "professional": "boll"
+    },
+    {
+      "id": "7",
+      "professional": "tennis"
+    }
   ]
 }
