@@ -1,0 +1,25 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "name": "iuri",
+      "image": "eu.png"
+    },
+    {
+      "id": "2",
+      "name": "silva",
+      "image": "voce.png"
+    }
+  ],
+
+  "info": [
+    {
+      "id": "3",
+      "like": "skateboard"
+    },
+    {
+      "id": "4",
+      "like": "pattins"
+    }
+  ]
+}
