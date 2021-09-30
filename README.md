@@ -1,6 +1,13 @@
 <br>
 <div align="center">
   <img width="300" alt="NextJS-ChakraUI" src="./.github/assets/print.png" />
+    <span align="center">
+      URL 'info/id/
+    </span>
+  <img width="300" alt="NextJS-ChakraUI" src="./.github/assets/print3.png" />
+  <span align="center">
+      URL 'persinal/id/
+    </span>
 
   <h4 align="center">
      Para afins de aprendizado de next.js
