@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
-import { useRouter } from 'next/router';
 import { api } from '../../services/api';
+import { useRouter } from 'next/router';
 
 import { Container } from '../../styles/pages/list-user';
 
@@ -16,11 +16,7 @@ type Props = {
 
 const User: NextPage<Props> = ({ data }) => {
   const { isFallback } = useRouter();
-
-  if (isFallback) {
-    return <p>Loading...</p>;
-  }
-
+  if (isFallback) return <p>loading....</p>;
   return (
     <Container>
       <h1>{data.like}</h1>
@@ -39,7 +35,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false // quando falso, só busaca os primeiros dados já disponíveis
+    fallback: true // quando falso, só busaca os primeiros dados já disponíveis
   };
 };
 
