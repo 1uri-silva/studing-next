@@ -15,11 +15,23 @@
   "info": [
     {
       "id": "3",
-      "like": "skateboard"
+      "like": "skateboard",
+      "user_id": "1",
+      "data":  {
+        "id": "1",
+        "name": "iuri",
+        "image": "eu.png"
+      }
     },
     {
       "id": "4",
-      "like": "pattins"
+      "like": "pattins",
+      "user_id": "2",
+      "data":  {
+        "id": "2",
+        "name": "silva",
+        "image": "voce.png"
+      }
     }
   ]
 }

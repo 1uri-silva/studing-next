@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable camelcase */
 import { GetStaticProps, NextPage } from 'next';
-
+import Link from 'next/link';
 import { api } from '../services/api';
 import { Container } from '../styles/pages/Home';
 
@@ -21,7 +21,9 @@ const Home: NextPage<Props> = ({ data }) => {
       {data.map(data => (
         <div key={data.id}>
           <h1>{data.name}</h1>
-
+          <Link href={`/info/filter?user_id=${data.id}`}>
+            <a>{data.name}</a>
+          </Link>
           <p>{data.image}</p>
         </div>
       ))}
@@ -33,12 +35,11 @@ export default Home;
 
 export const getStaticProps: GetStaticProps = async () => {
   // Retornar os dados já prontos para fazer a renderização
-  const { data } = await api.get<UserProps>('/user');
+  const { data } = await api.get<UserProps[]>('/user');
 
   return {
     props: {
       data
-    },
-    revalidate: 20
+    }
   };
 };
